@@ -9,8 +9,9 @@ public class ArithmetischeOperationen
         int substraktion = b - a;
         int multiplikation = a * b;
 
-        // Typanpassung: Java erlaubt nur division durch Gleitkommazahlen
-        double division = (double) b / (double) a;
+        // Typanpassung: Java erlaubt nur division durch Gleitkommazahlen (double oder float). Cast float in double
+        // möglich, umgekehrt nicht
+        double division = (float) b / (float) a;
         //Alternative: double div = a / (1,0 * b);
         int modulo = b % a;
 
